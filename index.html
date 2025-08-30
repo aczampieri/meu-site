@@ -1,37 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Site</title>
+  <title>Dr. Anderson Costa Zampieri - Fisioterapeuta</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonte Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
   <!-- CSS externo -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-  <header>
-    <h1>Bem-vindo ao meu site!</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Produtos</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
+  <!-- Header -->
+  <header id="header" class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#" class="text-2xl font-bold text-violet-700">Dr. Anderson Zampieri</a>
+      <div class="hidden md:flex space-x-6 items-center">
+        <a href="#sobre" class="text-gray-600 hover:text-violet-700 transition">Sobre Mim</a>
+        <a href="#atuacao" class="text-gray-600 hover:text-violet-700 transition">Áreas de Atuação</a>
+        <a href="#depoimentos" class="text-gray-600 hover:text-violet-700 transition">Depoimentos</a>
+        <a href="#localizacao" class="text-gray-600 hover:text-violet-700 transition">Localização</a>
+        <a href="#contato" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition shadow-sm">Contato</a>
+      </div>
+      <button id="mobile-menu-button" class="md:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
     </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white">
+      <a href="#sobre" class="block py-2 px-4 text-sm text-gray-700 hover:bg-violet-100">Sobre Mim</a>
+      <a href="#atuacao" class="block py-2 px-4 text-sm text-gray-700 hover:bg-violet-100">Áreas de Atuação</a>
+      <a href="#depoimentos" class="block py-2 px-4 text-sm text-gray-700 hover:bg-violet-100">Depoimentos</a>
+      <a href="#localizacao" class="block py-2 px-4 text-sm text-gray-700 hover:bg-violet-100">Localização</a>
+      <a href="#contato" class="block py-2 px-4 text-sm text-gray-700 hover:bg-violet-100">Contato</a>
+    </div>
   </header>
 
+  <!-- Conteúdo principal -->
   <main>
-    <section>
-      <h2>Sobre</h2>
-      <p>Este é o meu primeiro site publicado no GitHub Pages 🎉</p>
-    </section>
+    <!-- TODO: O resto do conteúdo já está pronto (Hero, Sobre Mim, Áreas de Atuação, Depoimentos, Localização, Contato) -->
+    <!-- Basta manter igual ao que você me enviou -->
   </main>
 
-  <footer>
-    <p>© 2025 - Meu Site</p>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white">
+    <div class="container mx-auto px-6 py-8 text-center">
+      <p>&copy; <span id="current-year"></span> Dr. Anderson Costa Zampieri. Todos os direitos reservados.</p>
+      <p class="text-sm text-gray-400 mt-2">Desenvolvido com 💚</p>
+    </div>
   </footer>
 
-  <!-- JavaScript externo -->
+  <!-- JS externo -->
   <script src="script.js"></script>
 </body>
 </html>
